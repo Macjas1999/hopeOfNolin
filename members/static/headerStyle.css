@@ -1,0 +1,212 @@
+header{
+    background-color: rgb(60, 54, 54);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+
+    min-height: 9.5vh;
+    margin: 0px;
+    top: 0;
+    border-radius: 0px;
+    height: 85px;
+    padding: 0px 15px;
+    z-index: 999;
+    width: 100%;
+}
+/* .headerText{
+
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    color: rgb(234, 194, 192);
+    font-size: 2.5em;
+    font-weight: 500;
+    left: 30vw;
+    position: fixed;
+    text-align: center;
+    top: 2.5vh;
+    right: 30vw;
+    float: right;
+} */
+@media only screen and (min-width: 768px) {
+    .textHeaderImg{
+        position: fixed;
+        margin-top: 1vh;
+        margin-left: auto;
+        margin-right: auto;
+        left: 30vw;
+        right: 30vw;
+        max-height: 7vh;
+        max-width: 40vw;
+        z-index: -1;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .textHeaderImg{
+        position: fixed;
+        margin-top: 1.5vh;
+        margin-left: auto;
+        margin-right: auto;
+        left: 22vw;
+        right: 40vw;
+        max-height: 7.5vh;
+        max-width: 45vw;
+        z-index: -1;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .logoHeader{
+        margin-right: 20px;
+        width: 9vh;
+        height: 9vh;
+        float: right;
+        transition: width 0.5s, height 0.5s;
+    }
+    .logoHeader:hover{
+        margin-right: 20px;
+        width: 35vh;
+        height: 35vh;
+        float: right;
+        transition: width 1s, height 1s;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logoHeader{
+        margin-right: 20px;
+        width: 9vh;
+        height: 9vh;
+        float: right;
+        transition: width 0.5s, height 0.5s;
+    }
+    .logoHeader:hover{
+        margin-right: 20px;
+        width: 20vh;
+        height: 20vh;
+        float: right;
+        transition: width 1s, height 1s;
+    }
+}
+
+
+.navImg{
+    height: 4vh;
+    min-width: 30px;
+    max-width: 40px;
+}
+/* @media only screen and (min-width: 768px) {
+    .navImg{
+        height: 4vh;
+        min-width: 30px;
+        max-width: 40px;
+    }
+} */
+/* @media only screen and (max-width: 768px) {
+    .navImg{
+        min-width: 40px;
+        max-width: 50px;
+        width: auto;
+    }
+}
+ */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    top: 2.5vh;
+
+}
+.dropdown-content {
+  /* display: none; */
+  /* alternativley absolute */
+  position: fixed; 
+  background-color: rgb(79, 72, 72);
+  min-width: 160px;
+  max-width: 240px;
+  width: 35vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 10vw;
+  padding-bottom: 30vh;
+  z-index: 1;
+  margin-left: 10px;
+  margin-top: 10px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.dropdown:hover .dropdown-content {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+}
+.dropdown:hover .navImg {
+    visibility: hidden;
+}
+
+.dropdownList{
+  list-style-type: none;
+}
+
+.dropdownListItem{
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.dropdownListItemText{
+  color: rgb(230, 235, 240);
+  text-decoration: none;
+  font-size: larger;
+}
+
+
+
+
+
+
+/* 
+.spanItemWide{
+    margin-top: 3vh;
+    margin-left: 2vw;
+    float: left;
+    
+}
+
+.wideListItemText{
+    color: rgb(230, 235, 240);
+    position: relative;
+    text-decoration: none;
+    font-size: larger;
+    margin-right: 2.5vh;
+    margin-left: 2.5vh;
+    float: left;
+
+    transition: font-size 0.1s linear;
+
+
+}
+.wideListItemText:hover{
+    font-size: 1.3em;
+    transition: font-size 0.2s linear;
+}
+.logoHeaderWide{
+    margin-right: 5vw;
+    width: 9vh;
+    height: 9vh;
+    float: right;
+    transition: width 0.5s, height 0.5s;
+
+
+}
+.logoHeaderWide:hover{
+    margin-right: 5vw;
+    width: 25vh;
+    height: 25vh;
+    float: right;
+    transition: width 1s, height 1s;
+
+} */

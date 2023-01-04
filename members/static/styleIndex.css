@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(234, 194, 192);
+    overflow-y: scroll; overflow-x:hidden;
+
+}
+
+.mainContentHold{
+    position: absolute;
+    right: 4%;
+    left: 4%;
+    max-width: 84%;
+    top: 10vh;
+    bottom: 10vh;
+    height: fit-content;
+
+    background-color: rgb(92, 78, 76);
+    border-radius: 10px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw; */
+
+    color: rgb(230, 235, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<header>
+{% load static %}
+<link rel="stylesheet" href="/static/headerStyle.css?{% now "U" %}"> 
+    <div class="dropdown">
+        <span><img class="navImg" src="/static/img/navico.png" alt="More?"></span>
+        <div class="dropdown-content">
+            <ul class="dropdownList">
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="/">HOME</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="#">NOWOŚCI</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="#">O NAS</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="/galery/">GALIERIA</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="/whippety/">WHIPPETY</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="szczenięta/">SZCZENIĘTA</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="/contact/">KONTAKT</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="links.html">LINKI</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <span><img class="logoHeader" src="/static/img/logo.jpg" alt="logo"></span>
+
+    <span><img class="textHeaderImg" src="/static/img/headertext.png" alt="logo"></span>
+
+    {% comment %} <a class="headerText">Hope Of Nolin</a> {% endcomment %}
+
+</header>
+</html>

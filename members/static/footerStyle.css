@@ -1,0 +1,18 @@
+.bottomInfoBar{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(60, 54, 54, 0.56);
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    color: rgb(230, 235, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
