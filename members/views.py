@@ -7,10 +7,21 @@ def index(request):
   template = loader.get_template('index.html')
   return HttpResponse(template.render())
 
+def timeline(request):
+  template = loader.get_template('timeline.html')
+  return HttpResponse(template.render()); HttpResponseRedirect((reverse('index')))
 def galery(request):
   template = loader.get_template('galery.html')
   return HttpResponse(template.render()); HttpResponseRedirect(reverse('index'))
-
+def whippets(request):
+  template = loader.get_template('whippets.html')
+  return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html')) 
+def puppies(request):
+  template = loader.get_template('puppies.html')
+  return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html'))
+def contact(request):
+  template = loader.get_template('contact.html')
+  return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html'))
 
 def headerView(request):
   template = loader.get_template('header.html')

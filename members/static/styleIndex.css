@@ -18,15 +18,11 @@ body{
     padding-left: 5vh;
     padding-right: 5vh;
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    /* padding-botMaciej1999!tom: 5vh; */
 
     margin-top: 1vh;
     margin-left: auto;
     margin-right: auto;
-
-    /* margin-top: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw; */
 
     color: rgb(230, 235, 240);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
