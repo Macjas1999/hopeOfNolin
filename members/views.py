@@ -22,7 +22,7 @@ def puppies(request):
 def contact(request):
   template = loader.get_template('contact.html')
   return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html'))
-def contact(request):
+def links(request):
   template = loader.get_template('links.html')
   return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html'))
 
