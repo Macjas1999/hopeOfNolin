@@ -2,6 +2,7 @@ from django.shortcuts import render
 from re import X, template
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
+from .models import *
 
 def index(request):
   template = loader.get_template('index.html')
@@ -10,15 +11,33 @@ def index(request):
 def timeline(request):
   template = loader.get_template('timeline.html')
   return HttpResponse(template.render()); HttpResponseRedirect((reverse('index')))
+
 def galery(request):
+  images = Image.objects.all
+  context = {}
+  context['images'] = images
+
+  #return render(request, '', context)
+
+  #template = loader.get_template('galery.html')
+  #return HttpResponse(template.render()); HttpResponseRedirect(reverse('index'))
+
   template = loader.get_template('galery.html')
-  return HttpResponse(template.render()); HttpResponseRedirect(reverse('index'))
+  return HttpResponse(template.render(context, request)); HttpResponseRedirect(reverse('index'))
+
 def whippets(request):
   template = loader.get_template('whippets.html')
   return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html')) 
+
 def puppies(request):
+  puppies = Puppies.objects.all
+  context = {}
+  context['puppies'] = puppies
+
   template = loader.get_template('puppies.html')
-  return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html'))
+  return HttpResponse(template.render(context, request)); HttpResponseRedirect(reverse('index.html'))
+
+
 def contact(request):
   template = loader.get_template('contact.html')
   return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html'))

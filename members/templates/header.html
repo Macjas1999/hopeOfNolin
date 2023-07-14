@@ -2,12 +2,15 @@
 <html>
 <header>
 {% load static %}
-<link rel="stylesheet" href="/static/headerStyle.css?{% now "U" %}"> 
+<link rel="stylesheet" href="/static/headerStyle.css?{% now "U" %}">
+
+<link rel="stylesheet" href="/static/bootstrap.min.css?{% now "U" %}">
+
     <div class="dropdown">
         <span><img class="navImg" src="/static/img/navico.png" alt="More?"></span>
         <div class="dropdown-content">
             <ul class="dropdownList">
-                <li class="dropdownListItem"><a class="dropdownListItemText" href="/">O NAS</a></li>
+                <li class="dropdownListItem"><a class="dropdownListItemText" href="/">O&nbspNAS</a></li>
                 <li class="dropdownListItem"><a class="dropdownListItemText" href="/timeline">NOWOŚCI</a></li>
                 <li class="dropdownListItem"><a class="dropdownListItemText" href="/galery">GALIERIA</a></li>
                 <li class="dropdownListItem"><a class="dropdownListItemText" href="/whippets">WHIPPETY</a></li>
