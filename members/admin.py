@@ -5,3 +5,4 @@ from .models import *
 
 admin.site.register(Image)
 admin.site.register(Puppies)
+admin.site.register(News)
