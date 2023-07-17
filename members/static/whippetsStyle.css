@@ -1,0 +1,14 @@
+.mainContentHold{
+    color: rgb(230, 235, 240);
+}
+.inTxt{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    color: rgb(230, 235, 240);
+    text-decoration: none;
+}
+h1{
+    color: rgb(230, 235, 240);
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    text-align: center;
+    padding-bottom: 3vh;
+}

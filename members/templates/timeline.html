@@ -4,16 +4,23 @@
         {% load static %}
         {% include 'head.html' %}
         <link rel="stylesheet" href="/static/timelineStyle.css?{% now "U" %}">
+        <link rel="stylesheet" href="/static/bootstrap.min.css?{% now "U" %}">
+
     </head>
     <body>
 
         {% include 'header.html' %}
         
         <div class="mainContentHold">
-            <div class="timeLElem">
-                <h1 class="timeLElemHeader"></h1>
-                <p class="timeLElemContent"></p>
+            {% for snews in snews %}
+            <div class="timeLElem card border-0">
+                <h1 class="timeLElemHeader">{{snews.title}}</h1>
+                <h5 class="timeLElemHeader">{{snews.date_display|date:"d.m.Y"}}</h5>
+                <img class="timelineImage shadow-sm" src="{{snews.horiImg.url}}" alt="{{snews.altTxt}}">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="{{snews.horiImg.url}}">View</a>
+                <p class="timeLElemContent">{{snews.contents}}</p>
             </div>
+            {% endfor %}
         </div>
 
         {% include 'footer.html' %}

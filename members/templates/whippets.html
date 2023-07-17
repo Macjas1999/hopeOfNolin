@@ -4,18 +4,33 @@
         {% load static %}
         {% include 'head.html' %}
         <link rel="stylesheet" href="/static/whippetsStyle.css?{% now "U" %}">
+        <link rel="stylesheet" href="/static/bootstrap.min.css?{% now "U" %}">
     </head>
     <body>
 
         {% include 'header.html' %}
-        
+                
         <div class="mainContentHold">
-            <div class="whippetsElem">
-                <h1 class="whippetsHeader"></h1>
-                <p class="whippetsContent"></p>
-            </div>
-        </div>
 
+            <h1>Whippety</h1>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+                {% for whippet in whippets %}
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a class="inTxt">{{whippet.name}}</a>
+                        <img src="{{whippet.squareImg.url}}" alt="{{whippet.altTxt}}">
+                        <a type="button" class="btn btn-sm btn-outline-secondary" href="{{whippet.squareImg.url}}">View</a>
+                        <a class="inTxt">&lowast; {{whippet.date_of_birth|date:"d.m.Y"}}</a> 	
+                        <a class="inTxt">{{whippet.description}}</a>
+                        {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>  
         {% include 'footer.html' %}
 
     </body>

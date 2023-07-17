@@ -3,6 +3,11 @@ body{
   overflow-y: scroll; overflow-x:hidden;
 
 }
+h1{
+  color: rgb(230, 235, 240);
+  text-align: center;
+}
+
 .grid-container {
   position: relative;
   display: grid;
@@ -18,47 +23,4 @@ body{
   font-size: 30px;
   max-width: 86%;
 
-}
-  
-
-.item1img{
-  max-width: 50vw;
-  max-height: 48vw;
-}
-.item2img{
-  float: right;
-  max-width: 36vw;
-  max-height: 48vw;
-}
-.item3img{
-  margin-top: 1vw;
-  max-width: 36vw;
-  max-height: 48vw;
-}
-.item4img{
-  margin-top: 1vw;
-  max-width: 42vw;
-  max-height: 48vw;
-}
-.item5img{
-  max-width: 30vw;
-  max-height: 48vw;
-}
-.item6img{
-  max-width: 30vw;
-  max-height: 48vw;
-}
-.item7img{
-  max-width: 30vw;
-  max-height: 48vw;
-}.item8img{
-  max-width: 30vw;
-  max-height: 48vw;
-}
-.item9img{
-  max-width: 30vw;
-  max-height: 48vw;
-}.item10img{
-  max-width: 30vw;
-  max-height: 48vw;
 }

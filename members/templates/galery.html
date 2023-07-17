@@ -5,24 +5,6 @@
         {% include 'head.html' %}
         <link rel="stylesheet" href="/static/galery.css?{% now "U" %}">
         <link rel="stylesheet" href="/static/bootstrap.min.css?{% now "U" %}">
-
-        {% comment %} <style>
-            .col {
-                flex: 0 0 auto;
-                flex-grow: 0;
-                flex-shrink: 0;
-                flex-basis: auto;
-                /*width: 33.3333333%;*/
-            }
-            .row {
-                grid-template-columns: auto auto;
-                display: grid;
-                flex-wrap: wrap;
-                display: grid;
-                position: relative;
-            }
-
-        </style> {% endcomment %}
         <style>
           .row {
             padding-bottom: 2vh;
@@ -51,29 +33,11 @@
                 <div class="card shadow-sm">
                   <img src="{{image.squareImg.url}}" alt="image.altText">
                   <a type="button" class="btn btn-sm btn-outline-secondary" href="{{image.squareImg.url}}">View</a>
-                  {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
                 </div>
               </div>
               {% endfor %}
 
             </div>
-
-            {% comment %} <div class="grid-container">
-                <div><img class="item1img" src="/static/img/gallery/001Nw1199h1214.jpg"></div>
-                <div><img class="item2img" src="/static/img/gallery/002Nw1162h1742.jpg"></div>       
-                <div><img class="item3img" src="/static/img/gallery/003Nw640h960.jpg"></div>
-                <div><img class="item4img" src="/static/img/gallery/003Nw640h960.jpg"></div>
-
-                <div><img class="item5img" src="/static/img/310118871_10227647039392502_6622890541442587325_n.jpg"></div>
-                <div><img class="item6img" src="/static/img/53736358_284851395790650_8772807101098491904_n.jpg"></div>
-                <div><img class="item7img" src="/static/img/53530333_284361332506323_5830650238712414208_n.jpg"></div>
-                <div><img class="item8img" src="/static/img/310118871_10227647039392502_6622890541442587325_n.jpg"></div>
-                <div><img class="item9img" src="/static/img/53736358_284851395790650_8772807101098491904_n.jpg"></div>
-                <div><img class="item10img" src="/static/img/53530333_284361332506323_5830650238712414208_n.jpg"></div>
-                <div><img class="item1img" src="/static/img/310118871_10227647039392502_6622890541442587325_n.jpg"></div>
-                <div><img class="item2img" src="/static/img/53736358_284851395790650_8772807101098491904_n.jpg"></div>
-              </div> {% endcomment %}
-
         </div>
         {% include 'footer.html' %}
 

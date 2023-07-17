@@ -4,21 +4,26 @@
         {% load static %}
         {% include 'head.html' %}
         <link rel="stylesheet" href="/static/puppiesStyle.css?{% now "U" %}">
+        <link rel="stylesheet" href="/static/bootstrap.min.css?{% now "U" %}">
     </head>
     <body>
 
         {% include 'header.html' %}
         
         <div class="mainContentHold">
+
+            <h1>Nasi wychowankowie</h1>
+
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               
                 {% for puppy in puppies %}
                 <div class="col">
                   <div class="card shadow-sm">
-                    <a>{{puppy.name}}</a>
-                    <img src="{{image.squareImg.url}}" alt="image.altText">
-                    <a type="button" class="btn btn-sm btn-outline-secondary" href="{{image.squareImg.url}}">View</a>
-                    <a>{{puppy.description}}</a>
+                    <a class="inTxt">{{puppy.name}}</a>
+                    <img src="{{puppy.squareImg.url}}" alt="{{puppy.altTxt}}">
+                    <a type="button" class="btn btn-sm btn-outline-secondary" href="{{puppy.squareImg.url}}">View</a>
+                    <a class="inTxt">&lowast; {{puppy.date_of_birth|date:"d.m.Y"}}</a> 	
+                    <a class="inTxt">{{puppy.description}}</a>
                     {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
                   </div>
                 </div>

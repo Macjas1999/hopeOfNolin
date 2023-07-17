@@ -1,3 +1,22 @@
-.timelineElem{
+.timeLElem{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
     background-color: bisque;
+}
+.timeLElemHeader{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    color: rgb(230, 235, 240);
+}
+.timeLElemContent{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    font-size: larger;
+    color: rgb(230, 235, 240);
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+.timelineImage{
+    
+    object-fit: scale-down;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }

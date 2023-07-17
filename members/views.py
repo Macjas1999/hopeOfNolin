@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from django.shortcuts import render
 from re import X, template
 from django.http import HttpResponse, HttpResponseRedirect
@@ -9,11 +10,15 @@ def index(request):
   return HttpResponse(template.render())
 
 def timeline(request):
+  snews = News.objects.all().order_by('-date_created')
+  context = {}
+  context['snews'] = snews
+
   template = loader.get_template('timeline.html')
-  return HttpResponse(template.render()); HttpResponseRedirect((reverse('index')))
+  return HttpResponse(template.render(context, request)); HttpResponseRedirect((reverse('index')))
 
 def galery(request):
-  images = Image.objects.all
+  images = Image.objects.all().order_by('-date_created')
   context = {}
   context['images'] = images
 
@@ -26,11 +31,15 @@ def galery(request):
   return HttpResponse(template.render(context, request)); HttpResponseRedirect(reverse('index'))
 
 def whippets(request):
+  whippets = Whippets.objects.all
+  context = {}
+  context['whippets'] = whippets
+
   template = loader.get_template('whippets.html')
-  return HttpResponse(template.render()); HttpResponseRedirect(reverse('index.html')) 
+  return HttpResponse(template.render(context, request)); HttpResponseRedirect(reverse('index.html')) 
 
 def puppies(request):
-  puppies = Puppies.objects.all
+  puppies = Puppies.objects.all().order_by('-date_of_birth')
   context = {}
   context['puppies'] = puppies
 
