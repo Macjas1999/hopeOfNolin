@@ -22,11 +22,6 @@ def galery(request):
   context = {}
   context['images'] = images
 
-  #return render(request, '', context)
-
-  #template = loader.get_template('galery.html')
-  #return HttpResponse(template.render()); HttpResponseRedirect(reverse('index'))
-
   template = loader.get_template('galery.html')
   return HttpResponse(template.render(context, request)); HttpResponseRedirect(reverse('index'))
 
