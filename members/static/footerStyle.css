@@ -8,11 +8,33 @@
     background-color: rgba(60, 54, 54, 0.56);
     padding-left: 5vh;
     padding-right: 5vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 
     color: rgb(230, 235, 240);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
+}
+
+.boxL{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    float: left;
+}
+.boxR{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    float: right;
+}
+a{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.nTel{
+    align-self: flex-start;
+}
+.aMail{
+    align-self: flex-end;
 }

@@ -153,3 +153,4 @@ class News(models.Model):
         self.slug = slugify('{} {}'.format(self.title, self.uniqueId))
         self.last_updated = timezone.localtime(timezone.now())
         super(News, self).save(*args, **kwargs)
+
