@@ -18,7 +18,6 @@ body{
     padding-left: 5vh;
     padding-right: 5vh;
     padding-top: 5vh;
-    /* padding-botMaciej1999!tom: 5vh; */
 
     margin-top: 1vh;
     margin-left: auto;
@@ -27,3 +26,13 @@ body{
     color: rgb(230, 235, 240);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+h1{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+}
+.indexImage{
+    padding: auto;
+}
+.indexText{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    font-size: medium;
+} 
